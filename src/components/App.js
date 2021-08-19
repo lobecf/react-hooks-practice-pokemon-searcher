@@ -11,11 +11,9 @@ function App() {
     .then(data => setAllPokemon(data)))
   }, [])
 
-  const displayPokemon = allPokemon
-
   return (
     <div className="App">
-      <PokemonPage allPokemon={displayPokemon}/>
+      <PokemonPage allPokemon={allPokemon}/>
     </div>
   );
 }
