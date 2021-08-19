@@ -3,8 +3,10 @@ import PokemonCollection from "./PokemonCollection";
 import PokemonForm from "./PokemonForm";
 import Search from "./Search";
 import { Container } from "semantic-ui-react";
+import PokemonCard from "./PokemonCard";
 
 function PokemonPage() {
+
   return (
     <Container>
       <h1>Pokemon Searcher</h1>
