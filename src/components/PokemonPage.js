@@ -5,7 +5,12 @@ import Search from "./Search";
 import { Container } from "semantic-ui-react";
 import PokemonCard from "./PokemonCard";
 
-function PokemonPage() {
+function PokemonPage(props) {
+
+  const {allPokemon} = props
+
+  const displayPokemon = allPokemon.map(pokemon=> <PokemonCard key={pokemon.id} pokemon={pokemon}/>)
+
 
   return (
     <Container>
@@ -16,6 +21,7 @@ function PokemonPage() {
       <Search />
       <br />
       <PokemonCollection />
+      {displayPokemon}
     </Container>
   );
 }
